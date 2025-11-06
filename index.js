@@ -14,19 +14,19 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "Destinations",
       description: "Explore breathtaking places around the globe",
       image: "./images/Nature.jpeg",
-      link: "/src/Destination/destination.html",
+      link: "./Destination/destination.html",
     },
     {
       title: "Food",
       description: "Discover flavors from every corner of the world",
       image: "./images/Byrek.png",
-      link: "/src/Food/food.html",
+      link: "./Food/food.html",
     },
     {
       title: "Travel Tips",
       description: "Get practical advice to make your journey smoother",
       image: "./images/TravelTips.jpg",
-      link: "/src/Travel_Tips/tips.html",
+      link: "./Travel_Tips/tips.html",
     },
   ];
 
