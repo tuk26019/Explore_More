@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Explore More</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <script src="../index.js" type="module"></script>
+    <script src="contact.js" type="module" defer></script>
+  </head>
+
+  <body>
+    <div id="app"></div>
+
+    <header>
+      <div class="container">
+        <div class="section left">
+          <img src="/src/images/logo.png" alt="Logo" class="logo" />
+          <h1>Explore More</h1>
+        </div>
+      <div class="header-inner">
+        <nav class="nav" role="navigation" aria-label="Main navigation">
+          <ul>
+            <li><a href="/src/index.html" class="nav-link">Home</a></li>
+            <li>
+              <a href="/src/Destination/destination.html" class="nav-link">Destination</a>
+            </li>
+            <li><a href="/src/Food/food.html" class="nav-link">Food</a></li>
+            <li>
+              <a href="/src/Travel_Tips/tips.html" class="nav-link">Travel Tips</a>
+            </li>
+            <li>
+              <a href="/src/Contact/contact.html" class="nav-link cta">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="contact-banner">
+        <div class="contact-content">
+          <h1>About Us</h1>
+        </div>
+      </div>
+
+      <!-- Contact Banner -->
+      <div class="contact-container">
+        <!-- Left Column: Contact Form -->
+        <div class="contact-left">
+          <h2>Get In Touch</h2>
+          <section class="formcarry-container">
+            <form id="contactForm" enctype="mulcontactart/form-data">
+              <div class="formcarry-block">
+                <label for="fc-generated-1-name">Full Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="fc-generated-1-name"
+                  placeholder="Your first and last name"
+                  required
+                />
+              </div>
+
+              <div class="formcarry-block">
+                <label for="fc-generated-1-email">Your Email Address</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="fc-generated-1-email"
+                  placeholder="john@doe.com"
+                  required
+                />
+              </div>
+
+              <div class="formcarry-block">
+                <label for="fc-generated-1-message">Your Message</label>
+                <textarea
+                  name="message"
+                  id="fc-generated-1-message"
+                  placeholder="Enter your message..."
+                  required
+                ></textarea>
+              </div>
+
+              <div class="formcarry-block">
+                <button type="submit">Send</button>
+              </div>
+
+              <p id="formMessage" class="form-message"></p>
+            </form>
+          </section>
+        </div>
+
+        <!-- Right Column: Mission Statement -->
+        <div class="contact-right">
+          <div class="missionStatement">
+            <h2>Our Mission</h2>
+            <p>
+              Explore More inspires discovery, not just of places, but flavors
+              and experiences. We believe that travel is more than visiting
+              destinations. It's about immersing yourself in new perspectives,
+              tasting authentic cuisines, and connecting with people from around
+              the world.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Social Sidebar -->
+      <div class="social-sidebar">
+        <p class="follow-label">Follow Me On</p>
+        <a href="https://www.linkedin.com/in/maklisa-prifti" target="_blank">
+          <img
+            id="linkedinSidebar"
+            src="../images/linkedin.jpg"
+            alt="LinkedIn"
+          />
+        </a>
+        <a href="https://github.com/tuk26019" target="_blank">
+          <img src="../images/github.png" alt="GitHub" />
+        </a>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p>
+          © <span id="currentYear"></span> Explore More | Designed by Maklisa
+          Prifti
+        </p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/maklisa-prifti" target="_blank">
+            <img id="linkedin" src="../images/linkedin.jpg" alt="LinkedIn" />
+          </a>
+          <a href="https://github.com/tuk26019" target="_blank">
+            <img id="github" src="../images/github.png" alt="GitHub" />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

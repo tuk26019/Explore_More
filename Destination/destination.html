@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Explore More</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="destination.css" />
+    <script src="../index.js" type="module"></script>
+    <script src="destination.js" type="module" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="section left">
+          <img src="/src/images/logo.png" alt="Logo" class="logo" />
+          <h1>Explore More</h1>
+        </div>
+        <div class="header-inner">
+          <nav class="nav">
+            <ul>
+              <li><a href="/src/index.html" class="nav-link">Home</a></li>
+              <li>
+                <a href="/src/Destination/destination.html" class="nav-link"
+                  >Destination</a
+                >
+              </li>
+              <li><a href="/src/Food/food.html" class="nav-link">Food</a></li>
+              <li>
+                <a href="/src/Travel_Tips/tips.html" class="nav-link"
+                  >Travel Tips</a
+                >
+              </li>
+              <li>
+                <a href="/src/Contact/contact.html" class="nav-link cta"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="destination-banner">
+        <div class="destination-content">
+          <h1>Where Will You Go Next?</h1>
+          <h6>Explore destinations that will take your breath away!</h6>
+        </div>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div id="myBtnContainer">
+        <button class="btn active">Show all</button>
+        <button class="btn">City</button>
+        <button class="btn">Beach</button>
+        <button class="btn">Nature</button>
+      </div>
+
+      <!-- Cards -->
+      <div class="card-container">
+        <div class="card-button filterDiv city" data-modal="modal1">
+          <img src="../images/Tokyo.png" alt="Tokyo" class="card-image" />
+          <h3 class="card-title">Tokyo, Japan</h3>
+        </div>
+
+        <div class="card-button filterDiv beach" data-modal="modal2">
+          <img
+            src="../images/MaldivesOverwater.jpg"
+            alt="Maldives"
+            class="card-image"
+          />
+          <h3 class="card-title">Maldives</h3>
+        </div>
+
+        <div class="card-button filterDiv nature" data-modal="modal3">
+          <img
+            src="../images/switzerland.jpeg"
+            alt="Swiss Alps"
+            class="card-image"
+          />
+          <h3 class="card-title">Swiss Alps, Switzerland</h3>
+        </div>
+
+        <div class="card-button filterDiv city" data-modal="modal4">
+          <img src="../images/Seoul.jpg" alt="Seoul" class="card-image" />
+          <h3 class="card-title">Seoul, South Korea</h3>
+        </div>
+
+        <div class="card-button filterDiv nature" data-modal="modal5">
+          <img
+            src="../images/YellowstoneNationalPark.jpg"
+            alt="Yellowstone National Park"
+            class="card-image"
+          />
+          <h3 class="card-title">Yellowstone National Park, USA</h3>
+        </div>
+
+        <div class="card-button filterDiv beach" data-modal="modal6">
+          <img
+            src="../images/SurfersParadise.jpg"
+            alt="Australia"
+            class="card-image"
+          />
+          <h3 class="card-title">Gold Coast, Australia</h3>
+        </div>
+
+        <div class="card-button filterDiv beach" data-modal="modal7">
+          <img
+            src="../images/RedBeach.jpg"
+            alt="Greece"
+            class="card-image"
+          />
+          <h3 class="card-title">Santorini, Greece</h3>
+        </div>
+
+        <div class="card-button filterDiv city" data-modal="modal8">
+          <img src="../images/Istanbul.jpg" alt="Istanbul" class="card-image" />
+          <h3 class="card-title">Istanbul, Türkiye</h3>
+        </div>
+
+        <div class="card-button filterDiv nature" data-modal="modal9">
+          <img
+            src="../images/BlueMountains.jpeg"
+            alt="Yellowstone National Park"
+            class="card-image"
+          />
+          <h3 class="card-title">Blue Mountains, Australia</h3>
+        </div>
+
+        <div class="card-button filterDiv nature" data-modal="modal10">
+          <img
+            src="../images/Kirkjufell_Iceland.webp"
+            alt="Iceland"
+            class="card-image"
+          />
+          <h3 class="card-title">Iceland</h3>
+        </div>
+
+        <div class="card-button filterDiv city" data-modal="modal11">
+          <img src="../images/rome-italy.jpg" alt="Rome" class="card-image" />
+          <h3 class="card-title">Rome, Italy</h3>
+        </div>
+
+        <div class="card-button filterDiv city" data-modal="modal12">
+          <img
+            src="../images/RioDeJaneiro.jpg"
+            alt="Brazil"
+            class="card-image"
+          />
+          <h3 class="card-title">Rio de Janeiro, Brazil</h3>
+        </div>
+      </div>
+
+      <!-- Modals -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Tokyo, Japan</h2>
+          <p>
+            Tokyo is a bustling city where tradition meets the future. Its
+            streets are filled with neon lights, shopping, and delicious food.
+            Ancient temples sit peacefully alongside towering skyscrapers. You
+            can explore unique neighborhoods, each with its own vibe. Tokyo is a
+            city that never sleeps, offering endless experiences day and night.
+          </p>
+          <h4>Places to Visit</h4>
+          <ul class="visit">
+            <li><b>Asakusa</b> - District with an atmosphere of old Tokyo</li>
+            <li><b>Shibuya</b> - Popular district among younger generations</li>
+            <li><b>Ueno Park</b> - City park with multiple museums and a zoo</li>
+            <li><b>Tokyo Tower</b> - 333 meter tall symbol of Tokyo.</li>
+          <ul>
+            <p>For more places to visit, click <a href="https://www.japan-guide.com/e/e2164.html" target="_blank"> here</a></p>
+        </div>
+      </div>
+
+      <div id="modal2" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Maldives</h2>
+          <p>A tropical paradise of crystal-clear waters, white sandy beaches, 
+            and luxurious overwater villas. Perfect for relaxation, adventure, 
+            and romance, it's a dream destination for beach lovers. Go snorkeling 
+            or diving among vibrant coral reefs, take a sunset cruise, or simply 
+            unwind on a private island.
+          </p>
+          <h4>Things to Do</h4>
+          <ul class="visit">
+            <li><b>Snorkeling & Scuba Diving</b> - Explore colorful coral reefs and marine life</li>
+            <li><b>Overwater Villas</b> - Stay in luxury resorts with direct lagoon access</li>
+            <li><b>Island Hopping</b> - Visit local islands to experience Maldivian culture</li>
+            <li><b>Vaadhoo Island</b> - See the magical Sea of Stars, where the beach glows at night</li>
+          <ul>
+            <p>For more places to visit, click <a href="https://visitmaldives.com/en/places" target="_blank"> here</a></p>
+        </div>
+      </div>
+
+      <div id="modal3" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Swiss Alps, Switzerland</h2>
+          <p>Majestic mountains offering stunning landscapes, outdoor adventures, and charming alpine villages. 
+            Hike scenic trails, ski or snowboard in winter, and ride panoramic cable cars for breathtaking views. 
+            Explore quaint villages, enjoy Swiss cuisine, and relax by crystal-clear lakes surrounded by peaks. 
+            The Swiss Alps are perfect for nature lovers and thrill-seekers alike.
+          </p>
+          <h4>Things to Do</h4>
+          <ul class="visit">
+            <li><b>Interlaken</b> - Adventure hub for paragliding, rafting, and hiking</li>
+            <li><b>Lake Geneva & Montreux</b> - Stunning lake views and charming towns</li>
+            <li><b>Aletsch Glacier</b> - Switzerland's largest glacier with walking trails</li>
+            <li><b>Bernese Oberland</b> - Classic alpine scenery with waterfalls and meadows</li>
+          <ul>
+            <p>For more places to visit, click <a href="https://www.myswitzerland.com/en-us/" target="_blank"> here</a></p>
+        </div>
+      </div>
+
+      <div id="modal4" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Seoul, South Korea</h2>
+          <p>A dynamic city where modern skyscrapers meet centuries-old palaces. 
+            You can explore bustling markets, taste world-famous Korean cuisine, 
+            and enjoy vibrant nightlife. Traditional temples and royal palaces sit 
+            alongside trendy shopping streets and art districts. The city offers
+             hiking trails, Han River parks, and cultural experiences for every traveler. 
+             Seoul is a perfect blend of history, technology, and entertainment.
+            </p>
+            <h4>Places to Visit</h4>
+            <ul class="visit">
+              <li><b>Namsan Seoul Tower</b> - Panoramic city views from the tower on Namsan Mountain</li>
+              <li><b>Gyeongbokgung Palace</b> - Explore the grand royal palace and watch the changing of the guard.</li>
+              <li><b>Lotte World Tower</b> - Seoul's tallest skyscraper with panoramic city views, shopping, and entertainment.</li>
+              <li><b>Namsangol Hanok Village</b> -  A traditional Korean village showcasing restored hanok houses, cultural activities, and beautiful gardens.</li>
+            </ul>
+            <p>For more places to visit, click <a href="https://english.visitseoul.net/attractions" target="_blank"> here</a></p>
+        </div>
+      </div>
+
+      <div id="modal5" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Yellowstone National Park, USA</h2>
+          <p>America's first national park, famous for its geothermal wonders, wildlife, and vast wilderness. Explore geysers, 
+            hot springs, and bubbling mud pots, or hike scenic trails through forests and canyons. Spot bison, elk, and bears in 
+            their natural habitats, and enjoy camping, fishing, and photography in this iconic park.
+          </p>
+          <h4>Places to Visit</h4>
+            <ul class="visit">
+              <li><b>Old Faithful Geyser</b> - Famous erupting geyser with regular intervals</li>
+              <li><b>Hayden Valley</b> - Ideal for sunrise wildlife photography</li>
+              <li><b>Artist Point</b> - Stunning viewpoint of the Grand Canyon of the Yellowstone</li>
+              <li><b>Lamar Valley</b> -  Prime location for wildlife viewing, especially wolves and bison</li>
+            </ul>
+            <p>For more places to visit, click <a href="https://www.nps.gov/index.htm" target="_blank"> here</a></p>
+        </div>
+      </div>
+
+      <div id="modal6" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Gold Coast, Australia</h2>
+          <p>A sun-soaked destination famous for its golden beaches, 
+            surf culture, and theme parks. It's the perfect mix of 
+            relaxation and adventure, offering everything from beach walks 
+            to rainforest hikes. Explore lively nightlife, waterfront dining, 
+            and outdoor fun under the Australian sun.
+          </p>
+          <h4>Things to Do</h4>
+          <ul class="visit">
+            <li><b>Surfers Paradise</b> - Iconic beach with great waves, shopping, and nightlife</li>
+            <li><b>Burleigh Heads</b> - Scenic coastal walks and surf spots</li>
+            <li><b>Currumbin Wildlife Sanctuary</b> - Get close to kangaroos, koalas, and native wildlife</li>
+            <li><b>Tamborine Mountain</b> - Discover wineries, rainforest trails, and charming villages</li>
+          <ul>
+            <p>For more places to visit, click <a href="https://www.goldcoastaustralia.com/" target="_blank"> here</a></p>
+        </div>
+      </div>
+
+      <div id="modal7" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Santorini, Greece</h2>
+          <p>A stunning island famous for its whitewashed buildings, blue-domed churches, and breathtaking 
+            sunsets. Explore charming villages, volcanic beaches, and ancient ruins while savoring delicious 
+            Greek cuisine. Enjoy boat trips, wine tasting, and relaxing by the Aegean Sea in this picturesque 
+            paradise
+          </p>
+          <h4>Things to Do</h4>
+          <ul class="visit">
+            <li><b>Oia</b> - Famous for its sunsets and scenic cliffside streets</li>
+            <li><b>Red Beach & Kamari Beach</b> - Unique volcanic sand beaches</li>
+            <li><b>Santo Winery</b> - Sample local wines with panoramic views</li>
+            <li><b>Perissa Beach</b> - Black sand beach with beach bars and water sports</li>
+          <ul>
+            <p>For more places to visit, click <a href="https://santorini.gr/" target="_blank"> here</a></p>
+        </div>
+      </div>
+
+      <div id="modal8" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Istanbul, Türkiye</h2>
+          <p>A city where East meets West, blending rich history with 
+            vibrant modern life. You can explore ancient mosques, bustling 
+            bazaars, and scenic waterways. Take a ferry on the Bosphorus, 
+            wander through historic neighborhoods, and taste authentic Turkish 
+            cuisine. From majestic palaces to colorful markets, Istanbul offers 
+            endless cultural experiences. It's a city of contrasts, with centuries 
+            of history alongside contemporary art and nightlife.
+          </p>
+          <h4>Places to Visit</h4>
+          <ul class="visit">
+            <li><b>Bosphorus Cruise</b> - Scenic boat ride between Europe and Asia</li>
+            <li><b>Galata Tower</b> - Panoramic views of the city skyline and Bosphorus</li>
+            <li><b>Grand Bazaar</b> - Shop for spices, textiles, and souvenirs in one of the world's largest covered markets</li>
+            <li><b>Basilica Cistern</b> - Ancient underground water reservoir with atmospheric lighting.</li>
+          </ul>
+          <p>For more places to visit, click <a href="https://visit.istanbul/" target="_blank"> here</a></p>
+        </div>
+      </div>
+
+      <div id="modal9" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Blue Mountains, Australia</h2>
+          <p>A stunning region of dramatic cliffs, eucalyptus forests, and waterfalls just outside Sydney. 
+            Hike scenic trails, explore charming villages, and enjoy panoramic lookouts. Adventure seekers 
+            can try canyoning, abseiling, and rock climbing, while nature lovers can spot wildlife and relax 
+            amidst lush landscapes.
+          </p>
+          <h4>Places to Visit</h4>
+          <ul class="visit">
+            <li><b>Katoomba Falls</b> - Scenic waterfall with easy walking trails</li>
+            <li><b>Jenolan Caves</b> - Spectacular limestone caves with guided tours</li>
+            <li><b>Scenic World</b> - Cable cars, skyway, and scenic railway through the rainforest</li>
+            <li><b>Megalong Valley</b> - Rural landscapes perfect for horse riding and picnics</li>
+          </ul>
+          <p>For more places to visit, click <a href="https://www.visitbluemountains.com.au/" target="_blank"> here</a></p>
+        </div>
+      </div>
+
+      <div id="modal10" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Iceland</h2>
+          <p>A land of dramatic natural beauty, Iceland is famous for glaciers, volcanoes, waterfalls, and geothermal wonders. 
+            Explore rugged landscapes, soak in hot springs, hike glaciers, and chase the Northern Lights. Adventure seekers can 
+            enjoy hiking, ice climbing, whale watching, and exploring lava fields, while nature lovers will marvel at the unique volcanic scenery
+          </p>
+          <h4>Places to Visit</h4>
+          <ul class="visit">
+            <li><b>Northern Lights Viewing</b> - Best seen in winter, away from city lights</li>
+            <li><b>Vatnajökull National Park</b> - Glaciers, ice caves, and hiking opportunities</li>
+            <li><b>Landmannalaugar</b> - Colorful rhyolite mountains and hot springs for trekking</li>
+            <li><b>Reykjanes Peninsula</b> - Geothermal landscapes and the Blue Lagoon</li>
+          </ul>
+          <p>For more places to visit, click <a href="https://www.visiticeland.com/" target="_blank"> here</a></p>
+        </div>
+      </div>
+
+      <div id="modal11" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Rome, Italy</h2>
+          <p>A city where ancient history, art, and 
+            vibrant street life come together. Walk among 
+            centuries-old ruins, admire world-famous architecture, 
+            and enjoy authentic Italian cuisine. Explore charming 
+            piazzas, toss a coin in a legendary fountain, and soak 
+            in the city's romantic atmosphere. From the grandeur of 
+            the Colosseum to the beauty of Vatican City, every corner 
+            of Rome tells a story.
+          </p>
+          <h4>Places to Visit</h4>
+          <ul class="visit">
+            <li><b>Colosseum</b> - Iconic ancient amphitheater and symbol of Rome</li>
+            <li><b>Vatican City</b> - Panoramic views of the city skyline and Bosphorus</li>
+            <li><b>Grand Bazaar</b> - Shop for spices, textiles, and souvenirs in one of the world's largest covered markets</li>
+            <li><b>Basilica Cistern</b> - Ancient underground water reservoir with atmospheric lighting.</li>
+          </ul>
+          <p>For more places to visit, click <a href="https://www.turismoroma.it/en" target="_blank"> here</a></p>
+        </div>
+      </div>
+
+      <div id="modal12" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Rio de Janeiro, Brazil</h2>
+          <p>A city of stunning natural beauty, lively culture, and endless energy. 
+            Relax on golden beaches, hike up scenic mountains, and experience the rhythm 
+            of samba. From iconic landmarks to breathtaking views, Rio offers adventure 
+            and charm at every turn. Enjoy the vibrant nightlife, tropical cuisine, and 
+            warm hospitality that make the city unforgettable.
+          </p>
+          <h4>Places to Visit</h4>
+          <ul class="visit">
+            <li><b>Christ the Redeemer</b> - World-famous statue overlooking the city from Corcovado Mountain</li>
+            <li><b>Sugarloaf Mountain</b> - Ride the cable car for panoramic views of Rio's coastline</li>
+            <li><b>Selarón Steps</b> - Colorful mosaic staircase created by artist Jorge Selarón</li>
+            <li><b>Sambadrome</b> - Experience the excitement of Rio's Carnival parades</li>
+          </ul>
+          <p>For more places to visit, click <a href="https://www.riodejaneiro.com/" target="_blank"> here</a></p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p>
+          © <span id="currentYear"></span> Explore More | Designed by Maklisa
+          Prifti
+        </p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/maklisa-prifti" target="_blank">
+            <img id="linkedin" src="../images/linkedin.jpg" alt="LinkedIn" />
+          </a>
+          <a href="https://github.com/tuk26019" target="_blank">
+            <img id="github" src="../images/github.png" alt="GitHub" />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

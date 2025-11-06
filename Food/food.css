@@ -1,0 +1,263 @@
+main {
+  padding-bottom: 50px;
+}
+/* food Banner */
+.food-banner {
+  margin-bottom: 60px; /* adds space below the banner */
+  padding: 80px 0;
+  background: #387468;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 8px;
+}
+
+.food-content h6 {
+  font-size: large;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+.food-content {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  max-width: 800px;
+  padding: 50px;
+  /* padding-top: 150px; */
+  margin: 0 auto;
+}
+
+/* SubHead */
+.subhead {
+  justify-items: center;
+  padding-bottom: 25px;
+  font-size: x-large;
+}
+
+.subhead.iconic-desserts {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.subhead.iconic-desserts h2 {
+  margin-top: 0;
+}
+
+/* slideshow */
+
+/* Slideshow container */
+.slideshow-container {
+  width: 1200px;
+  height: 550px;
+  position: relative;
+  margin: 0 auto auto auto;
+  border: solid black 2px;
+  box-shadow: 0px 1px 15px 3px rgb(2, 112, 166);
+  overflow: hidden;
+}
+
+.mySlides img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: bottom bottom;
+}
+
+/* Caption text */
+.text {
+  color: #000000;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for the dots */
+.dot-container {
+  margin-bottom: 40px;
+  text-align: center; /* center dots horizontally */
+  padding: 15px 0;
+  background: transparent;
+  position: relative; /* ensures it's above anything behind it */
+}
+
+/* Dots */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 4px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Overlay styling */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.45); /* translucent dark background */
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Text inside overlay */
+.overlay-text h3 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.overlay-text p {
+  margin: 5px 0 0;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+/* Card Section Styling */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  margin-bottom: 100px;
+}
+
+.card-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  width: 220px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.card-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  color: #333333;
+  margin: 0 0 10px;
+}
+
+.card-description {
+  font-size: 0.9rem;
+  color: #555555;
+}
+
+.subhead.iconic-desserts {
+  text-align: center;
+  padding: 40px 20px 20px;
+  font-weight: 400;
+}
+
+/* Modal Styles */
+.modal {
+  display: none; /* hidden by default */
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center; /* centers modal content horizontally */
+  align-items: center; /* centers modal content vertically */
+  background-color: rgba(0, 0, 0, 0.4);
+  overflow: auto; /* enable scrolling if content is too tall */
+}
+
+.modal-content {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+  padding: 30px;
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+  position: relative;
+}
+
+.modal-content p {
+  text-align: left;
+  line-height: 1.5;
+}
+
+.close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  color: #000;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.close:hover,
+.close:focus {
+  color: #333;
+  transform: scale(1.2);
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {
+    font-size: 11px;
+  }
+}

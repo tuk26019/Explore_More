@@ -1,0 +1,274 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+main {
+  padding-top: 140px;
+}
+
+/* Hero Banner */
+.hero-banner {
+  height: 750px; /* increased from 400px to 600px for a taller banner */
+  padding: 80px 0;
+  background-image: url("./images/HomeBanner.jpeg");
+  background-size: 100% auto; /* slightly larger than container to show more sides */
+  background-position: center center; /* focus on the center */
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.hero-content {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  max-width: 800px;
+  padding: 50px;
+  /* padding-top: 150px; */
+  margin: 0 auto;
+}
+
+/* Button Styling */
+button {
+  background: #2563eb;
+  color: white;
+  border: black solid 1px;
+  padding: 0.5rem 0.8rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.hero-content button:hover {
+  background: #1e40af;
+}
+
+/* Subtitle */
+.subtitle {
+  text-align: center; /* centers text inside */
+  padding: 60px 40px; /* space around section */
+}
+
+.subtitle h3 {
+  margin: 30px auto; /* centers block element horizontally */
+  max-width: 800px; /* optional: keeps text from stretching too wide */
+  color: #000000;
+  font-weight: 400;
+  text-align: center; /* ensures multi-line text is centered */
+}
+
+.subtitle h1 {
+  margin: 50px 0; /* space above and below h1 */
+  font-size: 2rem;
+  color: #000000;
+  font-weight: 600;
+}
+
+/* Header styling */
+header {
+  background-color: rgb(167, 167, 167);
+  padding: 0px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.2rem 0;
+  background-color: rgb(167, 167, 167);
+}
+
+.section.left {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding-left: 2rem;
+}
+
+.logo {
+  height: 135px;
+  width: auto;
+  display: block;
+}
+
+.section.left h1 {
+  margin: 0;
+  font-size: 45px;
+  line-height: 1;
+}
+
+/* cards */
+/* Container holding all cards */
+.card-containers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  padding: 40px 20px;
+  margin: 50px;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+/* Individual card wrapper */
+.card-body {
+  width: 450px; /* slightly bigger width */
+  height: 400px; /* height to match image */
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-body:hover {
+  transform: scale(1.05); /* slightly bigger on hover */
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Card inner styling */
+.card {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative; /* for overlay text */
+}
+
+/* Make image cover the whole card */
+.cardHeader {
+  width: 100%;
+  height: 100%;
+}
+
+.cardHeader img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.card-body:hover img {
+  transform: scale(1.1); /* subtle zoom effect on hover */
+}
+
+.cardBody {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.4); /* semi-transparent overlay */
+  color: #ffffff;
+  text-align: left;
+}
+
+.cardBody h5 {
+  margin: 0 0 5px;
+  font-size: 1.3rem;
+}
+
+.cardBody p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Nav container */
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 25px;
+  padding: 0 2rem 0 0;
+}
+
+/* Nav list */
+.nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Nav links */
+.nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+/* Hover effect */
+.nav a:hover {
+  color: #0077ff;
+}
+
+/* Footer */
+.site-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: gray;
+  justify-items: center;
+}
+
+.footer-inner {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 15px;
+  text-align: center;
+}
+
+.site-footer .social-icons {
+  margin-top: 10px;
+  text-align: center; /* center icons */
+}
+
+.site-footer .social-icons a {
+  display: inline-block;
+  margin: 0 8px; /* space between icons */
+}
+
+.site-footer .social-icons img {
+  width: 24px; /* smaller size */
+  height: 24px;
+  transition: 0.2s transform;
+}
+
+.site-footer .social-icons img:hover {
+  transform: scale(1.2); /* slight hover effect */
+}
+
+#linkedin {
+  width: 35px;
+  height: 35px;
+}
+
+#github {
+  width: 28px;
+  height: 28px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+}

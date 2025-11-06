@@ -1,0 +1,284 @@
+/*GLOBAL STYLES */
+main {
+  padding-bottom: 5%;
+}
+
+/*CONTACT BANNER*/
+.contact-banner {
+  padding: 80px 0;
+  background: #387468;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.contact-content {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  max-width: 800px;
+  padding: 50px;
+  margin: 0 auto;
+}
+
+.contact-content h1 {
+  padding-top: 8%;
+}
+
+/*CONTACT SECTION LAYOUT */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* prevent overlap */
+  flex-wrap: wrap;
+  gap: 40px;
+  margin: 5% 10%;
+}
+
+/* LEFT COLUMN: Contact Form */
+.contact-left {
+  flex: 1 1 400px; /* min width 400px, flexible */
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-left h2 {
+  margin-bottom: 0px;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+/* RIGHT COLUMN: Mission Statement */
+.contact-right {
+  flex: 1 1 400px;
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border: 2px solid black;
+  box-sizing: border-box;
+  margin-top: 40px;
+}
+
+.contact-right .missionStatement {
+  max-width: 400px;
+}
+
+.missionStatement h2 {
+  margin-bottom: 20px;
+}
+
+.missionStatement p {
+  line-height: 1.8;
+  padding: 0 20px;
+}
+
+/*RESPONSIVE DESIGN*/
+@media (max-width: 1190px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    margin: 5% 5%;
+    gap: 30px;
+  }
+
+  /* Make mission statement appear first */
+  .contact-right {
+    order: -1;
+    padding: 10px;
+    margin-top: 0;
+  }
+
+  .contact-left,
+  .contact-right {
+    flex: 1 1 100%;
+    max-width: 700px;
+  }
+}
+
+/* CONTACT FORM STYLING*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+
+.formcarry-container {
+  box-sizing: border-box;
+  margin: 20px auto 0;
+  width: 500px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+
+  /* Colors */
+  --fc-border-color: #000000;
+  --fc-text-color: #000000;
+  --fc-placeholder-color: #b3b8d0;
+  --fc-primary-hsl: 220, 100%, 54%;
+  --fc-hover-bg: #f7f9fc;
+  --fc-hover-border: #4c7ec9;
+}
+
+.formcarry-container * {
+  box-sizing: border-box;
+}
+
+.formcarry-container label {
+  display: block;
+  cursor: pointer;
+}
+
+.formcarry-block:not(:first-child) {
+  margin-top: 20px;
+}
+
+.formcarry-container input,
+.formcarry-container textarea {
+  width: 100%;
+  border: 1px solid var(--fc-border-color);
+  border-radius: 6px;
+  padding: 10px 14px;
+  font-family: inherit;
+  font-size: 16px;
+  color: var(--fc-text-color);
+  transition: 0.15s all;
+}
+
+.formcarry-container textarea {
+  min-height: 200px;
+  padding-top: 14px;
+  resize: vertical;
+}
+
+.formcarry-container input::placeholder,
+.formcarry-container textarea::placeholder {
+  color: var(--fc-placeholder-color);
+}
+
+.formcarry-container input:hover,
+.formcarry-container textarea:hover {
+  border-color: var(--fc-hover-border);
+  background-color: var(--fc-hover-bg);
+}
+
+.formcarry-container input:focus,
+.formcarry-container textarea:focus {
+  border-color: hsl(var(--fc-primary-hsl));
+  box-shadow: hsla(var(--fc-primary-hsl), 8%) 0 0 0 3px;
+  outline: none;
+  background-color: #fff;
+}
+
+/* Button */
+.formcarry-container button {
+  width: 50%;
+  height: 50px;
+  border: 0;
+  border-radius: 6px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 20px;
+  background-color: hsl(var(--fc-primary-hsl));
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s all;
+  display: block;
+  margin: 20px auto 0 auto;
+  text-align: center;
+}
+
+.formcarry-container button:hover {
+  background-color: hsl(var(--fc-primary-hsl));
+  filter: brightness(1.1);
+}
+
+.formcarry-container button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px hsla(var(--fc-primary-hsl), 20%);
+}
+
+.formcarry-container button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Success / error message */
+.form-message {
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+}
+
+/*SOCIAL SIDEBAR*/
+.social-sidebar {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 15px 10px;
+  border-radius: 8px 0 0 8px;
+  box-shadow: -2px 2px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.follow-label {
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #000;
+  text-align: center;
+}
+
+.social-sidebar a {
+  margin: 10px 0;
+  display: inline-block;
+}
+
+.social-sidebar img {
+  width: 35px;
+  height: 35px;
+  transition: transform 0.2s;
+}
+
+#linkedinSidebar {
+  width: 45px;
+  height: 45px;
+}
+
+.social-sidebar img:hover {
+  transform: scale(1.2);
+}
+
+/* footer */
+#linkedin {
+  width: 35px;
+  height: 35px;
+}
+
+#github {
+  width: 28px;
+  height: 28px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+}

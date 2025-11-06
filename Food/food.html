@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Explore More</title>
+    <meta charset="UTF-8" />
+
+    <script src="../index.js" type="module"></script>
+    <script src="food.js" type="module" defer></script>
+
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="food.css" />
+  </head>
+
+  <body>
+    <div id="app"></div>
+
+    <header>
+      <div class="container">
+        <div class="section left">
+          <img src="/src/images/logo.png" alt="Logo" class="logo" />
+          <h1>Explore More</h1>
+        </div>
+        <div class="header-inner">
+          <nav class="nav" role="navigation" aria-label="Main navigation">
+            <ul>
+              <li><a href="/src/index.html" class="nav-link">Home</a></li>
+              <li>
+                <a href="/src/Destination/destination.html" class="nav-link"
+                  >Destination</a
+                >
+              </li>
+              <li><a href="/src/Food/food.html" class="nav-link">Food</a></li>
+              <li>
+                <a href="/src/Travel_Tips/tips.html" class="nav-link"
+                  >Travel Tips</a
+                >
+              </li>
+              <li>
+                <a href="/src/Contact/contact.html" class="nav-link cta"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Food Banner -->
+      <div class="food-banner">
+        <div class="food-content">
+          <h1>Experience Flavors and Adventure Around the Globe</h1>
+          <h6>
+            Embark on a culinary journey. Discover local traditions, savor
+            authentic dishes, and make memories that last a lifetime.
+          </h6>
+        </div>
+      </div>
+
+      <!-- Featured Restaurant Section -->
+      <div class="subhead">
+        <h2>Featured Restaurant</h2>
+      </div>
+
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 5</div>
+          <a
+            href="https://www.traube-tonbach.de/en/restaurants-bar/schwarzwaldstube/"
+            target="_blank"
+          >
+            <img src="../images/Schwarzwaldstube.jpg" style="width: 100%" />
+          </a>
+          <div class="overlay">
+            <div class="overlay-text">
+              <strong>Schwarzwaldstube — Baiersbronn, Germany</strong>
+              <p>
+                Renowned for modern German cuisine in a cozy, elegant setting.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 5</div>
+          <a
+            href="https://lespresdeugenie.com/en/?srsltid=AfmBOoohMjsWJbbt_O__IDYi1AWQJHFtUVVRxhw72vYXqnFKbz_xxLSW"
+            target="_blank"
+          >
+            <img src="../images/Les.jpg" style="width: 100%" />
+          </a>
+          <div class="overlay">
+            <div class="overlay-text">
+              <strong>Les Prés d'Eugénie - Eugénie-les-Bains, France</strong>
+              <p>Classic French fine dining with Michelin-star precision.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 5</div>
+          <a href="https://tresindstudio.com/" target="_blank">
+            <img src="../images/Tresind.jpg" style="width: 100%" />
+          </a>
+          <div class="overlay">
+            <div class="overlay-text">
+              <strong>Trèsind Studio - Dubai, UAE</strong>
+              <p>
+                Innovative Indian cuisine in a contemporary gourmet experience.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 5</div>
+          <a href="https://www.oteque.com/" target="_blank">
+            <img src="../images/Oteque.jpg" style="width: 100%" />
+          </a>
+          <div class="overlay">
+            <div class="overlay-text">
+              <strong>Oteque — Rio de Janeiro, Brazil</strong>
+              <p>Seafood-focused dishes showcasing Brazil's coastal flavors.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 5</div>
+          <a href="https://alchemist.dk/" target="_blank">
+            <img src="../images/Alchemist.jpg" style="width: 100%" />
+          </a>
+          <div class="overlay">
+            <div class="overlay-text">
+              <strong>Alchemist — Copenhagen, Denmark</strong>
+              <p>Avant-garde Nordic dining with a multi-sensory experience.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+
+      <div class="dot-container">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+
+      <!-- Iconic Desserts Section -->
+      <div class="subhead iconic-desserts">
+        <h2>Iconic Desserts</h2>
+      </div>
+
+      <div class="card-container">
+        <!-- Card 1: Halva -->
+        <div class="card-button" data-modal="modal1">
+          <img src="../images/Halva.jpg" alt="Halva" class="card-image" />
+          <h3 class="card-title">Halva</h3>
+        </div>
+
+        <!-- Card 2: Clafoutis -->
+        <div class="card-button" data-modal="modal2">
+          <img
+            src="../images/Clafoutis.jpg"
+            alt="Clafoutis"
+            class="card-image"
+          />
+          <h3 class="card-title">Clafoutis</h3>
+        </div>
+
+        <!-- Card 3: Baklava -->
+        <div class="card-button" data-modal="modal3">
+          <img src="../images/Baklava.jpg" alt="Baklava" class="card-image" />
+          <h3 class="card-title">Baklava</h3>
+        </div>
+
+        <!-- Card 4: Pavlova -->
+        <div class="card-button" data-modal="modal4">
+          <img src="../images/Pavlova.jpg" alt="Pavlova" class="card-image" />
+          <h3 class="card-title">Pavlova</h3>
+        </div>
+
+        <!-- Card 5: Patbingsu -->
+        <div class="card-button" data-modal="modal5">
+          <img
+            src="../images/Patbingsu.jpg"
+            alt="Patbingsu"
+            class="card-image"
+          />
+          <h3 class="card-title">Patbingsu</h3>
+        </div>
+      </div>
+
+      <!-- Modals -->
+      <!-- Modal 1: Halva -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Halva</h2>
+          <p>
+            Halva is a dense, sweet confection that comes in many variations
+            across the Middle East, Central Asia, and the Mediterranean. It is
+            typically made from sesame paste (tahini) or semolina, sweetened
+            with sugar or honey. The texture can range from crumbly and grainy
+            to smooth and fudge-like, depending on the preparation method. It is
+            often flavored with nuts, spices, or dried fruits for added
+            richness. Halva is traditionally enjoyed during celebrations or as a
+            daily treat with tea or coffee.
+          </p>
+          <p>
+            Here's a simple do-it-yourself
+            <a
+              href="https://silkroadrecipes.com/halva-middle-eastern-confection/"
+              target="_blank"
+              >recipe</a
+            >
+          </p>
+        </div>
+      </div>
+
+      <!-- Modal 2: Clafoutis -->
+      <div id="modal2" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Clafoutis</h2>
+          <p>
+            Clafoutis is a classic French dessert consisting of fruit, most
+            traditionally cherries, baked in a flan-like batter. The batter is
+            made with eggs, milk, flour, and sugar, giving it a custardy texture
+            once baked. It is often lightly dusted with powdered sugar before
+            serving, enhancing its delicate sweetness. Variations of clafoutis
+            include using plums, apples, or berries instead of cherries. This
+            dessert is both rustic and elegant, making it a popular choice for
+            casual family meals or sophisticated gatherings.
+          </p>
+          <p>
+            Here's a simple do-it-yourself
+            <a
+              href="https://www.simplyrecipes.com/recipes/cherry_clafouti/"
+              target="_blank"
+              >recipe</a
+            >
+          </p>
+        </div>
+      </div>
+
+      <!-- Modal 3: Baklava -->
+      <div id="modal3" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Baklava</h2>
+          <p>
+            Baklava is a rich, layered pastry that originated in the Middle East
+            and the Mediterranean region. It is made from thin sheets of phyllo
+            dough, filled with chopped nuts, and sweetened with syrup or honey.
+            The result is a crisp, flaky dessert that melts in your mouth while
+            offering a satisfying crunch. It is often spiced with cinnamon or
+            cardamom and sometimes garnished with pistachios or walnuts. Baklava
+            is traditionally served during holidays and special occasions,
+            symbolizing indulgence and celebration.
+          </p>
+          <p>
+            Here's a simple do-it-yourself
+            <a
+              href="https://www.simplyrecipes.com/recipes/baklava/"
+              target="_blank"
+              >recipe</a
+            >
+          </p>
+        </div>
+      </div>
+
+      <!-- Modal 4: Pavlova -->
+      <div id="modal4" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Pavlova</h2>
+          <p>
+            Pavlova is a light, airy dessert named after the Russian ballerina
+            Anna Pavlova, celebrated in both Australia and New Zealand. It
+            features a crisp meringue shell with a soft, marshmallow-like
+            interior. The dessert is typically topped with whipped cream and
+            fresh fruits such as berries, kiwis, or passionfruit. Its delicate
+            texture and balance of sweetness and tartness make it a refreshing
+            treat, especially in warmer months. Pavlova is often enjoyed during
+            festive occasions or as a centerpiece for dessert tables.
+          </p>
+          <p>
+            Here's a simple do-it-yourself
+            <a
+              href="https://www.simplyrecipes.com/recipes/pavlova/"
+              target="_blank"
+              >recipe</a
+            >
+          </p>
+        </div>
+      </div>
+
+      <!-- Modal 5: Patbingsu -->
+      <div id="modal5" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Patbingsu</h2>
+          <p>
+            Patbingsu is a popular Korean shaved ice dessert, especially enjoyed
+            during hot summers. It typically features finely shaved ice topped
+            with sweetened red beans (pat), condensed milk, and various fruits
+            such as strawberries, mango, or melon. Additional toppings can
+            include mochi, cereal flakes, nuts, or ice cream, creating a mix of
+            textures from creamy to chewy and crunchy. The dessert is
+            refreshing, light, and visually vibrant, often served in a large
+            bowl meant for sharing. Patbingsu is a beloved treat in Korea, both
+            as a street food favorite and in trendy cafés.
+          </p>
+          <p>
+            Here's a simple do-it-yourself
+            <a href="https://www.maangchi.com/recipe/patbingsu" target="_blank"
+              >recipe</a
+            >
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p>
+          © <span id="currentYear"></span> Explore More | Designed by Maklisa
+          Prifti
+        </p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/maklisa-prifti" target="_blank">
+            <img id="linkedin" src="../images/linkedin.jpg" alt="LinkedIn" />
+          </a>
+          <a href="https://github.com/tuk26019" target="_blank">
+            <img id="github" src="../images/github.png" alt="GitHub" />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

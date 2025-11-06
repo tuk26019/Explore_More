@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Explore More</title>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <script src="./index.js" type="module" defer></script>
+  </head>
+
+  <body>
+    <div id="app"></div>
+
+    <header>
+      <div class="container">
+        <div class="section left">
+          <img src="./images/logo.png" alt="Logo" class="logo" />
+          <h1>Explore More</h1>
+        </div>
+
+        <div class="header-inner">
+          <nav class="nav" role="navigation" aria-label="Main navigation">
+            <ul>
+              <li><a href="/src/index.html" class="nav-link">Home</a></li>
+              <li>
+                <a href="/src/Destination/destination.html" class="nav-link"
+                  >Destination</a
+                >
+              </li>
+              <li><a href="/src/Food/food.html" class="nav-link">Food</a></li>
+              <li>
+                <a href="/src/Travel_Tips/tips.html" class="nav-link"
+                  >Travel Tips</a
+                >
+              </li>
+              <li>
+                <a href="/src/Contact/contact.html" class="nav-link cta"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="hero-banner">
+        <div class="hero-content">
+          <h1>Discover flavors, sights, and stories from around the world.</h1>
+          <button
+            id="startExploring"
+            onclick="document.getElementById('explore').scrollIntoView();"
+          >
+            Start Exploring ▼
+          </button>
+        </div>
+      </div>
+
+      <div class="subtitle"></div>
+
+      <div id="explore" class="card-containers"></div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p>
+          © <span id="currentYear"></span> Explore More | Designed by Maklisa
+          Prifti
+        </p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/yourprofile" target="_blank">
+            <img
+              id="linkedin"
+              src="../src/images/linkedin.jpg"
+              alt="LinkedIn"
+            />
+          </a>
+          <a href="https://github.com/yourusername" target="_blank">
+            <img id="github" src="../src/images/github.png" alt="GitHub" />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
